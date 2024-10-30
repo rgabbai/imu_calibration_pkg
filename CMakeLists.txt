@@ -10,6 +10,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/CalibrateIMU.srv"
 )
 
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "srv/GetRPY.srv"
+)
+
 # Export dependencies
 ament_export_dependencies(rosidl_default_runtime)
 ament_package()
