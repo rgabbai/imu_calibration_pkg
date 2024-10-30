@@ -8,11 +8,12 @@ find_package(rosidl_default_generators REQUIRED)  # ROSIDL generators for servic
 # Generate the custom service definition
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/CalibrateIMU.srv"
-)
-
-rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetRPY.srv"
 )
+
+#rosidl_generate_interfaces(${PROJECT_NAME}
+#  "srv/GetRPY.srv"
+#)
 
 # Export dependencies
 ament_export_dependencies(rosidl_default_runtime)
